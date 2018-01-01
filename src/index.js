@@ -7,7 +7,7 @@ const styles = {
   textAlign: 'center',
 };
 
-const authURL = ""
+const authURL = "https://www.instagram.com/oauth/authorize/?client_id=79a9886651e94b4081decc663f1e91fd&redirect_uri=http://hack.exchange&response_type=code"
 
 const App = () => (
   <div style={styles}>
