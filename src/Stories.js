@@ -6,17 +6,16 @@ export default class Stories extends React.Component {
     super(props)
     const authURL = "https://www.instagram.com/oauth/authorize/?client_id=79a9886651e94b4081decc663f1e91fd&redirect_uri=http://hack.exchange&response_type=code"
     const clientID = "79a9886651e94b4081decc663f1e91fd"
+    const token = "5ec080db374a46ab9f217e477aac9b66"
     this.props = {
       authURL: authURL,
-      clientID: clientID
+      clientID: clientID,
+      token: token
     }
-    this.state = {token: ""}
+    this.state = {}
   }
   
   componentDidMount() {
-    let token = this.httpGet(this.props.authURL)
-    alert(token)
-    this.state = {token: token}
   }
   
   httpGet(theUrl) {
