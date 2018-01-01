@@ -14,7 +14,9 @@ export default class Stories extends React.Component {
   }
   
   componentDidMount() {
-    this.state = {token: this.httpGet(this.props.authURL)}
+    let token = this.httpGet(this.props.authURL)
+    alert(token)
+    this.state = {token: token}
   }
   
   httpGet(theUrl) {
