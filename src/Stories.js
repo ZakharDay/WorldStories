@@ -1,6 +1,6 @@
 import React from 'react'
 
-class Stories extends React.Component {
+export default class Stories extends React.Component {
 
   constructor(props) {
     super(props)
@@ -28,5 +28,5 @@ class Stories extends React.Component {
     return(
       <div>{this.state.token}</div>
     ) 
-
+  }
 }
